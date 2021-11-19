@@ -1,0 +1,66 @@
+
+        <Button ToolTip="Exit" x:Name="CloseBT"  Style="{StaticResource  IconButton}"  Margin="224,18,-13,0" Height="58" VerticalAlignment="Top" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Grid.Column="2"   >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.221"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.479"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Grid>
+                <!--<materialDesign:PackIcon x:Name="packIcon" Kind="CloseCircleOutline" Height="Auto" Width="45" VerticalAlignment="Stretch" HorizontalAlignment="Center"  />-->
+            </Grid>
+        </Button>
+
+        <StackPanel Margin="225,0,-69,0" Grid.ColumnSpan="3">
+            <StackPanel Margin="20 40">
+                <TextBlock Text="User Login" Margin="60 30 50 50" Foreground="White" TextAlignment="Center" FontSize="38" FontFamily="Great Vibes"></TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="200 10" Width="300">
+                    <materialDesign:PackIcon Kind="User" Width="45" Height="45" Foreground="White"/>
+                    <TextBox x:Name="txtUsername" Margin="15 0" FontSize="18" materialDesign:HintAssist.Hint="Enter Username / Email" Foreground="White" Width="227" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" Height="34" RenderTransformOrigin="0.5,0.5" >
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.071"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="200 15">
+                    <materialDesign:PackIcon Kind="Lock" Width="40" Height="35" Foreground="White"/>
+                    <PasswordBox x:Name="txtPassword" Margin="15 0" FontSize="15" materialDesign:HintAssist.Hint="********" Foreground="White" Width="256" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" Height="35" />
+                </StackPanel>
+
+                <StackPanel Width="198" Margin="130,50,100,0" Grid.Column="2">
+                    <Button Foreground="White"  Width="200" Height="40" Content="Login" RenderTransformOrigin="0.573,0.598" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Width="100" Margin="376,0,0,0" Grid.Column="2">
+            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Margin="20 50" Background="{x:Null}"
+                 ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" Height="54" Width="46" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.445"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <materialDesign:PackIcon Kind="Close" Foreground="White" Width="30" Height="30" />
+            </Button>
+
+
+
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+
+</Window>
